@@ -16,6 +16,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
+# uvx is needed to launch the Aviationstack MCP server
+RUN pip install --no-cache-dir uv
+
 COPY . .
 
 EXPOSE 8000

@@ -1,4 +1,8 @@
 # Environments
+.env
+.git
+__pycache__
+excalidraw
 .venv
 env/
 venv/
